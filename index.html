@@ -1,1 +1,352 @@
-<h1>Hi!</h1>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LJ6GKZNJH8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LJ6GKZNJH8');
+</script>
+<meta name="google-site-verification" content="LiDQQL3lQIrulOh-DYL0T2birwmir5fmjD4LB4bl2AU" />
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://docs.google.com/drawings/d/e/2PACX-1vR6mnb1i0uRGYg5XVluPQ52bDaYQb7CjcuwWxq5njzRJE9mfhqpZXYl6AGmAFV2WX4hfe3y9Ax1TvrF/pub?w=604&h=455">
+<link rel="icon" type="image/png" sizes="32x32" href="https://docs.google.com/drawings/d/e/2PACX-1vR6mnb1i0uRGYg5XVluPQ52bDaYQb7CjcuwWxq5njzRJE9mfhqpZXYl6AGmAFV2WX4hfe3y9Ax1TvrF/pub?w=604&h=455">
+<link rel="icon" type="image/png" sizes="16x16" href="https://docs.google.com/drawings/d/e/2PACX-1vR6mnb1i0uRGYg5XVluPQ52bDaYQb7CjcuwWxq5njzRJE9mfhqpZXYl6AGmAFV2WX4hfe3y9Ax1TvrF/pub?w=604&h=455">
+
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='https://fonts.googleapis.com/css?family=Jost' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link href='https://fonts.googleapis.com/css?family=Manrope' rel='stylesheet'>
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://docs.google.com/drawings/d/e/2PACX-1vR6mnb1i0uRGYg5XVluPQ52bDaYQb7CjcuwWxq5njzRJE9mfhqpZXYl6AGmAFV2WX4hfe3y9Ax1TvrF/pub?w=604&h=455">
+<link rel="icon" type="image/png" sizes="32x32" href="https://docs.google.com/drawings/d/e/2PACX-1vR6mnb1i0uRGYg5XVluPQ52bDaYQb7CjcuwWxq5njzRJE9mfhqpZXYl6AGmAFV2WX4hfe3y9Ax1TvrF/pub?w=604&h=455">
+<link rel="icon" type="image/png" sizes="16x16" href="https://docs.google.com/drawings/d/e/2PACX-1vR6mnb1i0uRGYg5XVluPQ52bDaYQb7CjcuwWxq5njzRJE9mfhqpZXYl6AGmAFV2WX4hfe3y9Ax1TvrF/pub?w=604&h=455">
+
+
+<title>Web Maker Dashboard</title>
+<style>
+body {margin:0; font-family: roboto;}
+a {font-family: Jost; color: black;   text-decoration: none;
+}
+
+.icon-bar {
+  width: 100%;
+  background-color: #ebe8e8;
+  overflow: hidden;
+  color: black;
+  height: 50px;
+  font-family: roboto;
+  }
+  .bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+
+}
+.add-btn {
+  background-color: #525252;
+  border: none;
+  color: white;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+  margin: 5px 3px;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: 0.4s;
+  position: absolute;
+  bottom: 30px;
+  right: 25px;
+  
+}
+.add-btn:hover {
+  background-color: #8a8a8a; /* Red */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+
+/* My Account  */
+
+.avatar {
+  vertical-align: middle;
+  border-radius: 50%;
+  float: right;
+    width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+.avatar-bg {
+  vertical-align: middle;
+  border-radius: 50%;
+    width: 70px;
+  height: 70px;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav .a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  font-family: Manrope;
+}
+
+.sidenav .a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+#myInput {
+  background-image: url('https://fonts.gstatic.com/s/i/materialicons/filter_list/v6/24px.svg?download=false');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 88%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+  float: center;
+  border-radius: 10px;
+  font-family: Manrope;
+  background-color: #F1F3F4;
+  border: none;
+  
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  
+}
+
+#myUL   {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block;
+  
+}
+.button {
+  background-color: red; /* Red */
+  border: none;
+  color: white;
+  padding: 10px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 17px;
+  margin: 5px 3px;
+  cursor: pointer;
+  font-family: roboto;
+  border-radius: 3px;
+  
+}
+.btn-login {
+  background-color: white; /* Red */
+  border: none;
+  color: red;
+  padding:  10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 0px 0px;
+  cursor: pointer;
+  font-family: roboto;
+  border-radius: 0px;
+  width: 100px;
+  /* padding: 2px 16px;
+  margin: 0px 0px; */
+  }
+  .btn-signup {
+  background-color: red; /* Red */
+  border: none;
+  color: white;
+  padding:  10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  width: 100px;
+  
+  cursor: pointer;
+  font-family: roboto;
+  border-radius: 0px;
+  /* padding: 2px 16px;
+  margin: 0px 0px; */
+}
+.head {
+background-image: url("https://docs.google.com/drawings/d/e/2PACX-1vRFm9kkYet9Ip24q2e75eKU8E77GbVYEIFtK8PKaIfJMcmYbf4qmNkzrCAEMjZVzUAUpSbGDyQCfbwR/pub?w=1523&h=570");
+padding: 70px;
+}
+.try-it {
+background-image: url("https://docs.google.com/drawings/d/e/2PACX-1vTSwGUHsWrbCz9mqkIb8OJAgRUUU0lAHiTzjttP6wWNJnSBaQ8NvrkV7Y2GzdEPpVSlnVazpEXokKog/pub?w=1392&h=786");
+padding: 70px;
+
+
+
+
+</style>
+<body>
+
+<div class="icon-bar">
+<img align="center" height="47" src="https://docs.google.com/drawings/d/e/2PACX-1vTogt_RPjYrnPtd3qMQxSa7ri5sa-1jahLWl2ch5itumjzxtfWRkHr0M2oqqPMH5fDpIE6Dj5CUs0ip/pub?w=965&h=230" width="200">
+<a href="#">Web Maker Dashboard</a>
+
+<!--AVATAR DROP DOWN-->
+
+ <a  class="avatar btn-login" href="http://www.authpro.com/auth/webmaker346/">LOGIN</a>
+  <a id="myBtn" class="avatar btn-signup">SIGN UP</a>
+
+  </div>
+  
+  <div class="head">
+      <center>
+      <img src="https://docs.google.com/drawings/d/e/2PACX-1vRm6-afQELAPQ7k5w0gIgftzud_B0rNxJVYdn0NLy4E-t-Tr5sVC7iSnXraADUCSoRD9tck0bu4fFPh/pub?w=965&h=230" width="879" height="209" style="display: block; margin-left: auto; margin-right: auto;" />
+      </center>
+  </div>
+  <div class="try-it">
+      <center>
+     <h1>It can be a lot easier with Web Maker.</h1>
+      <a  class="button" href="http://www.authpro.com/auth/webmaker346/">Try Web Maker for free</a>
+    </center>
+      </div>
+  <br>
+  <br>
+  <br>
+  <p>&copy; 2020 Web Maker, A Tiydines Company</p>
+
+  
+
+
+
+
+
+
+
+  <!-- My Acount Box -->
+<div id="myModal" class="modal">
+
+  <!-- My Account Box content -->
+  <div class="modal-content">
+  <!--<span class="close">&times;</span>-->
+    
+    
+    <center>
+<h1>Welcome To Web Maker Dashboard!</h1>
+<p>Signing up with Web Maker Dashboard is curently unavalable. You can sign up from the main website.</p>
+<button class="close button">Got It</button>
+    </center>
+  </div>
+
+</div>
+<script async src="https://drv.tw/inc/wd.js"></script></body>
+</html> 
+
+
+
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
